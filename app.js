@@ -15,6 +15,10 @@ function createGrid() {
     rows = document.createElement('div');
     container.appendChild(rows);
   }
+  let entireGrid = document.querySelectorAll('div');
+  entireGrid.forEach((square) => {
+    square.addEventListener('mouseover', changeColor);
+  });
 }
 
 createGrid();
