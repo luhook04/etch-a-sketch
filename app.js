@@ -21,4 +21,9 @@ function createGrid() {
   });
 }
 
+function changeColor(e) {
+  const selectedGrid = e.target;
+  selectedGrid.style.backgroundColor = 'black';
+}
+
 createGrid();
