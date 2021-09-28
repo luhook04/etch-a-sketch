@@ -1,5 +1,6 @@
 // create variables
 const container = document.querySelector('.container');
+const btn = document.querySelector('#clear');
 let gridSize;
 let rows;
 
@@ -21,9 +22,20 @@ function createGrid() {
   });
 }
 
+// changes color of each individual square
 function changeColor(e) {
   const selectedGrid = e.target;
   selectedGrid.style.backgroundColor = 'black';
 }
+
+// changes all square colors back to white
+function resetGrid() {
+  let entireGrid = document.querySelectorAll('div');
+  entireGrid.forEach((square) => {
+    square.style.backgroundColor = 'aqua';
+  });
+}
+
+btn.addEventListener('click', resetGrid);
 
 createGrid();
