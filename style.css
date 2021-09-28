@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  width: 960px;
+  height: 960px;
+}
+
+div {
+  background-color: aqua;
+}
